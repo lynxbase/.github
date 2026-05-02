@@ -42,9 +42,9 @@ lens, here's what they tell me." You can spin one up in seconds. You can stack t
 You can throw them away. The raw data sits underneath, untouched, waiting for the
 next question.
 
-This is what the project is really about. Everything else - the storage engine, the
-query language, the CLI - is in service of one thing: *let people think with their
-logs, instead of preparing their logs to be thought about.*
+That's the whole point. The storage engine, the query language, the CLI - they all
+exist so that people can *think with their logs, instead of preparing their logs to
+be thought about.*
 
 ## What it feels like
 
@@ -59,9 +59,9 @@ lynxdb server
 lynxdb query 'level=error | stats count by service'
 ```
 
-The same binary is both. There is nothing to install on top of it. There is no JVM.
-There are no satellite services. You can run it on a $5 VPS or scale it across a
-hundred nodes - the experience of *using* it doesn't change.
+One binary does both. No JVM, no extra services, nothing to install on top of it. Run
+it on a $5 VPS or scale it across a hundred nodes - the experience of *using* it
+doesn't change.
 
 ## What I gave up to get here
 
@@ -70,10 +70,9 @@ wrapper around an existing engine. LynxDB is neither. The storage format, the
 inverted index, the query planner, the materialized view runtime - all written from
 scratch in Go.
 
-That choice cost time, but it bought back something I couldn't get any other way:
-the freedom to make every layer answer to one question - *does this make log
-analysis feel light?* If something compromises that - a dependency, a config flag, a
-step between "downloaded" and "useful" - it doesn't ship.
+That cost time. But it meant every layer could answer to one question - *does this
+make log analysis feel light?* If something compromises that - a dependency, a config
+flag, a step between "downloaded" and "useful" - it doesn't ship.
 
 ## Where it's going
 
