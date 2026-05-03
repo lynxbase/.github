@@ -3,7 +3,7 @@
 Two things have always been true about logs:
 
 1. They are noise. Until they aren't.
-2. By the time you know what you're looking for, you've already thrown away the answer.
+2. By the time you realize which logs actually mattered, they're already gone.
 
 I started building LynxDB because nothing I tried sat in the right place between two
 extremes.
